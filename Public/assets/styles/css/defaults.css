@@ -43,16 +43,186 @@
  * 3 - Nom_de_la_police_3
  * ---------------------------------------------------------------
  */
-/* Inclusion des Fonts */
+/* 
+ * Conception d'une animations pour le contour des modals
+ * ---------------------------------------------------------------
+ * 1 - Ombre anim├®
+ * ---------------------------------------------------------------
+ */
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Goudy+Bookletter+1911|Amita");
+@-webkit-keyframes borderAnime {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  10% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  43% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  76% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
+@-moz-keyframes borderAnime {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  10% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  43% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  76% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
+@-ms-keyframes borderAnime {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  10% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  43% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  76% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
+@-o-keyframes borderAnime {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  10% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  43% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  76% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
+@keyframes borderAnime {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  10% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  43% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+  76% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
+/* Inclusion des Fonts */
 /* CSS GENERALS */
-body main {
-  font-family: "Goudy+Bookletter+1911"; }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: #fff; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant+Garamond"; }
-
-a {
-  font-family: "Amita"; }
+body {
+  background-image: url("../../images/home.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  body main {
+    width: 70%;
+    text-align: center;
+    font-family: "Goudy+Bookletter+1911"; }
+    body main p {
+      font-size: 2rem;
+      letter-spacing: 0.5rem; }
+      body main p:first-letter {
+        font-size: 3rem; }
+    body main .btn_home {
+      padding: 10px;
+      margin: 50px 20px 20px 20px;
+      width: 200px;
+      background-color: #2171AE;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #2171AE;
+      transition: border .25s ease-in-out;
+      transition: color .8s ease-in-out;
+      transition: background-color .6s ease-in-out; }
+      body main .btn_home:hover {
+        cursor: pointer;
+        border: 1px solid #fff; }
+      body main .btn_home:focus {
+        background-color: #fff;
+        color: #2171AE;
+        transition: color .8s ease-in-out;
+        transition: background-color .6s ease-in-out; }
+  body h1 {
+    font-size: 6rem; }
+  body a {
+    font-family: "Amita"; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Cormorant+Garamond"; }
+  body .modal {
+    background-image: url("../../images/modal.jpg");
+    background-size: cover;
+    border: 1px solid #fff;
+    -webkit-animation: borderAnime 4s ease-in-out infinite;
+    -moz-animation: borderAnime 4s ease-in-out infinite;
+    -ms-animation: borderAnime 4s ease-in-out infinite;
+    -o-animation: borderAnime 4s ease-in-out infinite;
+    animation: borderAnime 4s ease-in-out infinite;
+    display: flex;
+    flex-direction: columns; }
+    body .modal .container {
+      text-align: center; }
+      body .modal .container .modal_body {
+        height: 70%;
+        width: 50%;
+        margin: 50px auto; }
+        body .modal .container .modal_body fieldset {
+          height: 100%; }
+          body .modal .container .modal_body fieldset legend {
+            font-size: 1.2rem;
+            letter-spacing: .6rem;
+            padding: 0 20px; }
+          body .modal .container .modal_body fieldset table {
+            margin-top: 40px;
+            text-align: center;
+            width: 100%; }
+            body .modal .container .modal_body fieldset table th {
+              width: 30%; }
+            body .modal .container .modal_body fieldset table td {
+              width: 70%; }
+          body .modal .container .modal_body fieldset .form_label {
+            padding: 20px;
+            text-transform: uppercase;
+            font-size: 1.6rem; }
+          body .modal .container .modal_body fieldset .form_input_text {
+            padding: 20px;
+            width: 100%;
+            border: none;
+            background-color: #383838;
+            color: #fff; }
+            body .modal .container .modal_body fieldset .form_input_text:focus {
+              border: 1px solid #fff; }
+          body .modal .container .modal_body fieldset .form_submit {
+            padding: 20px;
+            font-size: 2rem;
+            width: 100%;
+            background-color: #fff;
+            color: #383838;
+            text-transform: uppercase;
+            border: 1px solid #383838;
+            transition: border .25s ease-in-out;
+            transition: color .8s ease-in-out;
+            transition: background-color .6s ease-in-out; }
+            body .modal .container .modal_body fieldset .form_submit:hover {
+              cursor: pointer;
+              background-color: #383838;
+              color: #fff;
+              border: 1px solid #fff; }
+      body .modal .container .btn_close_modal {
+        position: absolute;
+        padding: 10px;
+        bottom: 20px;
+        right: 20px;
+        width: 200px;
+        background-color: #383838;
+        color: #fff;
+        text-transform: uppercase;
+        border: 1px solid #383838; }
+        body .modal .container .btn_close_modal:hover {
+          cursor: pointer;
+          border: 1px solid #fff; }
 
 /*# sourceMappingURL=defaults.css.map */
