@@ -50,50 +50,6 @@
  * ---------------------------------------------------------------
  */
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Goudy+Bookletter+1911|Amita");
-@-webkit-keyframes borderAnime {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
-  10% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  43% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
-  76% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
-@-moz-keyframes borderAnime {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
-  10% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  43% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
-  76% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
-@-ms-keyframes borderAnime {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
-  10% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  43% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
-  76% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
-@-o-keyframes borderAnime {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
-  10% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  43% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
-  76% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); } }
 @keyframes borderAnime {
   0% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }

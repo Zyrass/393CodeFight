@@ -17,12 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	  * 1 - LES CONSTANTES
 	  * ------------------------------------------------------------------
 	  */
-	const BTN_CONNEXION 		= document.getElementById('btn_connexion');
-	const BTN_INSCRIPTION 		= document.getElementById('btn_inscription');
-	const BTN_MENTIONS_LEGALES 	= document.getElementById('btn_mentions_legales');
-
+	const BTN_CONNEXION 			= document.getElementById('btn_connexion');
 	const MODAL_CONNEXION			= document.getElementById('modal_connexion');
+	
+	const BTN_INSCRIPTION 			= document.getElementById('btn_inscription');
 	const MODAL_INSCRIPTION			= document.getElementById('modal_inscription');
+	
+	const BTN_MENTIONS_LEGALES 		= document.getElementById('btn_mentions_legales');
 	const MODAL_MENTIONS_LEGALES	= document.getElementById('modal_mentions_legales');
 
 	const BTN_CLOSE_MODAL			= document.querySelectorAll('.btn_close_modal');
@@ -32,6 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	  * 2 - LES METHODES
 	  * ------------------------------------------------------------------
 	  */
+	 
+	// Méthode pour cacher toutes les modales
+	function hideAllModals() {
+		hideModalConnexion();
+		hideModalInscription();
+		hideModalMentionsLegales();
+	}
 
 	// Méthodes pour CACHER les modals
 	function hideModalConnexion() {
@@ -64,21 +72,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		hideModalMentionsLegales();
 	};
 	function showModalMentionsLegales() {
-		MODAL_MENTIONS_LEGALES.style.display 			= 'block';
-		MODAL_MENTIONS_LEGALES.style.position 			= 'absolute';
-		MODAL_MENTIONS_LEGALES.style.zIndex 			= '99999';
-		MODAL_MENTIONS_LEGALES.style.width 				= '80vw';
-		MODAL_MENTIONS_LEGALES.style.height 			= '70vh';
+		MODAL_MENTIONS_LEGALES.style.display 	= 'block';
+		MODAL_MENTIONS_LEGALES.style.position 	= 'absolute';
+		MODAL_MENTIONS_LEGALES.style.zIndex 	= '99999';
+		MODAL_MENTIONS_LEGALES.style.width 		= '80vw';
+		MODAL_MENTIONS_LEGALES.style.height 	= '70vh';
 		hideModalConnexion();
 		hideModalInscription();
 	};
-
-	// Méthode pour cacher toutes les modales
-	function hideAllModals() {
-		hideModalConnexion();
-		hideModalInscription();
-		hideModalMentionsLegales();
-	}
 
 	// Méthode pour initiliser le programme
 	function program_init() {

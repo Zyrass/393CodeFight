@@ -6,6 +6,5 @@
     <!-- Navigation -->
     <ul>
         <li><a href="./?page=home">Accueil - (Home page)</a></li>
-        <li><a href="./?page=contact">Contact - (Contact page)</a></li>
     </ul> <!-- /Navigation -->
 </header>

@@ -4,34 +4,6 @@
  * 1 - Ombre animé
  * ---------------------------------------------------------------
  */
-@-webkit-keyframes borderAnime {
-	0% { box-shadow: 0 0 5px rgba($textColor, .3) }
-	10% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	43% { box-shadow: 0 0 20px rgba($textColor, .3) }
-	76% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	100% { box-shadow: 0 0 5px rgba($textColor, .3) }
-}
-@-moz-keyframes borderAnime {
-	0% { box-shadow: 0 0 5px rgba($textColor, .3) }
-	10% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	43% { box-shadow: 0 0 20px rgba($textColor, .3) }
-	76% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	100% { box-shadow: 0 0 5px rgba($textColor, .3) }
-}
-@-ms-keyframes borderAnime {
-	0% { box-shadow: 0 0 5px rgba($textColor, .3) }
-	10% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	43% { box-shadow: 0 0 20px rgba($textColor, .3) }
-	76% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	100% { box-shadow: 0 0 5px rgba($textColor, .3) }
-}
-@-o-keyframes borderAnime {
-	0% { box-shadow: 0 0 5px rgba($textColor, .3) }
-	10% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	43% { box-shadow: 0 0 20px rgba($textColor, .3) }
-	76% { box-shadow: 0 0 10px rgba($textColor, .6) }
-	100% { box-shadow: 0 0 5px rgba($textColor, .3) }
-}
 @keyframes borderAnime {
 	0% { box-shadow: 0 0 5px rgba($textColor, .3) }
 	10% { box-shadow: 0 0 10px rgba($textColor, .6) }

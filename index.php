@@ -1,6 +1,6 @@
 <?php
 
-include_once './config.php';
+require_once './config.php';
 
 if (isset($_GET['page']) && !empty($_GET['page'])) {
 	$page = trim(strtolower($_GET['page']));
@@ -9,9 +9,6 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
 }
 
 $allPages = scandir('App/Controllers/');
-
-// var_dump($allPages);
-// die;
 
 if (in_array($page.'_controller.php', $allPages)) {
     require 'App/Models/' . $page . '_model.php';
