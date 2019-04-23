@@ -1,0 +1,26 @@
+/* 
+ * @import
+ * ---------------------------------------------------------------
+ * 1 - variables : Contient tout les paramètres utiliser sur le site.
+ * 2 - fonts 	 : Contient les méthodes utiliser pour choisir le nombre de police sur le site.
+ * ---------------------------------------------------------------
+ */
+@import "variables";
+@import "fonts";
+
+/* Inclusion des Fonts */
+@include googleFonts-3($fontTitle, $fontContent, $fontLink);
+
+/* CSS GENERALS */
+body {
+	main {
+		font-family: $fontContent;
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $fontTitle;
+}
+
+a {
+	font-family: $fontLink;
+}

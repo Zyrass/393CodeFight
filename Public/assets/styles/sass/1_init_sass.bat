@@ -1,0 +1,1 @@
+sass C:\laragon\www\_projets\393CodeFight\Public\assets\styles\sass\defaults.scss C:\laragon\www\_projets\393CodeFight\Public\assets\styles\css\defaults.css

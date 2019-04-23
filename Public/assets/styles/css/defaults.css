@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 
+ * @import
+ * ---------------------------------------------------------------
+ * 1 - variables : Contient tout les param├¿tres utiliser sur le site.
+ * 2 - fonts 	 : Contient les m├®thodes utiliser pour choisir le nombre de police sur le site.
+ * ---------------------------------------------------------------
+ */
+/* 
+ * Couleurs du site.
+ * ---------------------------------------------------------------
+ * 1 - Couleur Primaire
+ * 2 - Couleur Secondaire
+ * 3 - Couleur du texte
+ * ---------------------------------------------------------------
+ */
+/* 
+ * Polices d'├®criture (Fonts)
+ * ---------------------------------------------------------------
+ * 1 - Police utilis├® pour les titres.
+ * 2 - Police utilis├® pour le contenu du site.
+ * 3 - Police utilis├® pour les liens.
+ * ---------------------------------------------------------------
+ */
+/* 
+ * Conception d'une mixin avec 1 police utiliser pour tout le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * ---------------------------------------------------------------
+ */
+/* 
+ * Conception d'une mixin acec 2 police utiliser sur le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * 2 - Nom_de_la_police_2
+ * ---------------------------------------------------------------
+ */
+/* 
+ * Conception d'une mixin 3 polices utiliser sur le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * 2 - Nom_de_la_police_2
+ * 3 - Nom_de_la_police_3
+ * ---------------------------------------------------------------
+ */
+/* Inclusion des Fonts */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Goudy+Bookletter+1911|Amita");
+/* CSS GENERALS */
+body main {
+  font-family: "Goudy+Bookletter+1911"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant+Garamond"; }
+
+a {
+  font-family: "Amita"; }
+
+/*# sourceMappingURL=defaults.css.map */

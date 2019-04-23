@@ -1,0 +1,54 @@
+/* 
+ * Conception d'une mixin avec 1 police utiliser pour tout le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * ---------------------------------------------------------------
+ */
+@mixin googleFonts-1($font_one) {
+	
+	// Conception de l'url avec la police incluse.
+	$one_googleFont: "https://fonts.googleapis.com/css?family=#{$font_one}";
+	@import url($one_googleFont);
+
+}
+
+/* 
+ * Conception d'une mixin acec 2 police utiliser sur le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * 2 - Nom_de_la_police_2
+ * ---------------------------------------------------------------
+ */
+@mixin googleFonts-2($font_one, $font_two) {
+	
+	// Conception de la base de l'url suivit du séparateur | entre les 2 polices.
+	$base_url: "https://fonts.googleapis.com/css?family=";
+	$font_separation: '|';
+
+	// Concaténation afin de créer l'url complète.
+	$two_googleFont: $base_url + $font_one + $font_separation + $font_two;
+
+	@import url($two_googleFont);
+
+}
+
+/* 
+ * Conception d'une mixin 3 polices utiliser sur le site.
+ * ---------------------------------------------------------------
+ * 1 - Nom_de_la_police_1
+ * 2 - Nom_de_la_police_2
+ * 3 - Nom_de_la_police_3
+ * ---------------------------------------------------------------
+ */
+@mixin googleFonts-3($font_one, $font_two, $font_three) {
+	
+	// Conception de la base de l'url suivit du séparateur | entre les polices.
+	$base_url: "https://fonts.googleapis.com/css?family=";
+	$font_separation: '|';
+
+	// Concaténation afin de créer l'url de la police complète.
+	$googleFontsResult: $base_url + $font_one + $font_separation + $font_two + $font_separation + $font_three;
+
+	@import url($googleFontsResult);
+
+}
