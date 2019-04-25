@@ -13,7 +13,7 @@
     
     <body>
         <main>
-            <h1>393CodeFight</h1>
+            <h1><?= ucfirst($page); ?> de <?= $_SESSION['pseudo']; ?></h1>
             <hr>
             <!-- Page Content -->
             <p>Bienvenue sur ce site ou vous trouverez un jeu interactif conçu spécialement en tant que projet perso pour la 3WA afin d'obtenir mon diplôme.</p>

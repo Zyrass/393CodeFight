@@ -1,12 +1,14 @@
 <!-- METAS -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="<?= WEBSITE_DESCRIPION; ?>" />
+<meta name="author" lang="fr" content="<?= WEBSITE_AUTHOR; ?>" />
 
 <!-- FAVICON https://favicons.fr/index.php -->
-<link rel="shortcut icon" href="<?= PATH_IMAGE . '/favicon/favicon.ico'; ?>" type="image/x-icon">
-<link rel="icon" href="<?= PATH_IMAGE . '/favicon/favicon.png'; ?>" type="image/png">
+<link rel="shortcut icon" href="<?= PATH_IMAGE.'/favicon/favicon.ico'; ?>" type="image/x-icon">
+<link rel="icon" href="<?= PATH_IMAGE.'/favicon/favicon.png'; ?>" type="image/png">
 <link rel="icon" sizes="32x32" href="<?= PATH_IMAGE.'/favicon/favicon-32.png'; ?>" type="image/png">
 <link rel="icon" sizes="64x64" href="<?= PATH_IMAGE.'/favicon/favicon-64.png'; ?>" type="image/png">
 <link rel="icon" sizes="96x96" href="<?= PATH_IMAGE.'/favicon/favicon-96.png'; ?>" type="image/png">
@@ -21,4 +23,4 @@
 <meta name="msapplication-TileColor" content="#FFFFFF">
 
 <!-- CSS -->
-<link rel="stylesheet" href="./Public/assets/styles/css/defaults.css">
+<link rel="stylesheet" href="<?= PATH_CSS.'defaults.css'; ?>">

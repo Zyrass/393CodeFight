@@ -16,8 +16,12 @@ session_start();
  * PATH * 
  ***********************************************************************/
 define('PATH_REQUIRE', substr($_SERVER['SCRIPT_FILENAME'], 0, -9));
+define('PATH_MODAL', substr($_SERVER['SCRIPT_FILENAME'], 0, -9).'Ressources/Views/modals/');
+
 define('PATH', substr($_SERVER['PHP_SELF'], 0, -9));
-define('PATH_IMAGE', './Public/assets/images/');
+define('PATH_IMAGE', substr($_SERVER['PHP_SELF'], 0, -9).'Public/assets/images/');
+define('PATH_CSS', substr($_SERVER['PHP_SELF'], 0, -9).'Public/assets/styles/css/');
+define('PATH_JS', substr($_SERVER['PHP_SELF'], 0, -9).'Public/assets/js/');
 
 /***********************************************************************
  * CONSTANTES CONNEXION DATABASE * 

@@ -1,0 +1,20 @@
+	
+				.form_submit {
+					padding: 20px;
+					font-size: 2rem;
+					width: 100%;						
+					background-color: $textColor;
+					color: $primaryColor;
+					text-transform: uppercase;
+					border: 1px solid $primaryColor;
+					transition: border .25s ease-in-out;
+					transition: color .8s ease-in-out;
+					transition: background-color .6s ease-in-out;
+
+					&:hover {
+						cursor: pointer;
+						background-color: $primaryColor;
+						color: $textColor;
+						border: 1px solid $textColor;
+					}
+				}

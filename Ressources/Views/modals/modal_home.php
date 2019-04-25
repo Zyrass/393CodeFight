@@ -14,19 +14,18 @@
 	 * 1 - CONNEXION
 	 * -------------------------------------------------------------
 	 */
-	require_once 'includes/_modal_connexion.php';
+	include PATH_MODAL.'includes/_modal_connexion.php';
 
 	/*
 	 * -------------------------------------------------------------
 	 * 2 - INSCRIPTION
 	 * -------------------------------------------------------------
 	 */
-	require_once 'includes/_modal_inscriptions.php';
+	include PATH_MODAL.'includes/_modal_inscriptions.php';
 
 	/*
 	 * -------------------------------------------------------------
 	 * 3 - MENTIONS LEGALES
 	 * -------------------------------------------------------------
 	 */
-	require_once 'includes/_modal_mentions_legales.php';
-
+	include PATH_MODAL.'includes/_modal_mentions_legales.php';
